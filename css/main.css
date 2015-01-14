@@ -27,3 +27,24 @@ a {
   color: #00AAEE;
   text-decoration: none;
 }
+
+.user-form {
+  display: block;
+  width: 33%;
+  margin: 3em auto;
+  background-color: #eee;
+  z-index: 5000;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.popUp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4c4c4e;
+  opacity: .7;
+  z-index: 4000;
+}

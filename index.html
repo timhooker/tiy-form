@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-      <h1></h1>
-      <form action="index.html" method="post">
-        <input type="button" name="some_name" value="">
-        <input type="phone" name="some_name" value="">
-        <input type="email" name="some_name" value="">
-        <input type="dropdown" name="some_name" value="">
-        <input type="radio" name="some_name" value="">
-        <input type="radio" name="some_name" value="">
-        <input type="checkbox" name="some_name" value="">
-        <input type="checkbox" name="some_name" value="">
-        <button type"submit"></button>
+<head>
+  <meta charset="utf-8">
+  <title>FORMS</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="popUp">
+    <div class="user-form">
+      <form method="post">
+        <label>Name:
+          <input type="text" name="user_name">
+        </label><br>
+        <label>Tel:
+          <input type="tel:" name="user_phone">
+        </label><br>
+        <label>Occupation
+          <select name="job">
+            <option>Front End Developer</option>
+            <option>Ruby Developer</option>
+            <option>Python Developer</option>
+            <option>Web Designer</option>
+          </select>
+        </label>
+        <br>
+        <label>Bio
+          <textarea placeholder="Tell us something about yourself" name="user_bio" rows="8" cols="40"></textarea>
+        </label><br>
+        <label>Boy or Girl?<br>
+          <label>Boy
+            <input type="radio" name="user_gender" value="male">
+          </label>
+          <label>Girl
+            <input type="radio" name="user_gender" value="male">
+          </label>
+        </label><br>
+        <label>Notifications<br>
+          <label>SMS
+            <input type="checkbox" name="user_notifications" value="sub_text">
+          </label><br>
+          <label>Email
+            <input type="checkbox" name="user_notifications" value="sub_email">
+          </label>
+        </label><br>
+        <label>
+          By signing up you are agreeing to our terms and conditions<br>
+          <input type="checkbox" name="terms" value="accepted">
+        </label>
+        <button type="submit">Submit</button>
       </form>
-  </body>
+    </div>
+  </div>
+</body>
 </html>
