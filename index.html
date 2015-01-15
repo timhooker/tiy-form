@@ -11,45 +11,57 @@
   <div class="popUp">
     <div class="user-form">
       <form method="post">
-        <label>Name:
-          <input type="text" name="user_name">
-        </label><br>
-        <label>Tel:
-          <input type="tel:" name="user_phone">
-        </label><br>
-        <label>Occupation
-          <select name="job">
-            <option>Front End Developer</option>
-            <option>Ruby Developer</option>
-            <option>Python Developer</option>
-            <option>Web Designer</option>
-          </select>
-        </label>
-        <br>
-        <label>Bio
-          <textarea placeholder="Tell us something about yourself" name="user_bio" rows="8" cols="40"></textarea>
-        </label><br>
-        <label>Boy or Girl?<br>
-          <label>Boy
-            <input type="radio" name="user_gender" value="male">
-          </label>
-          <label>Girl
-            <input type="radio" name="user_gender" value="male">
-          </label>
-        </label><br>
-        <label>Notifications<br>
-          <label>SMS
-            <input type="checkbox" name="user_notifications" value="sub_text">
+        <fieldset>
+          <legend><h3>Basic info about yourself:</h3></legend>
+          <label>Name:<br>
+            <input class="text_input" type="text" name="user_name">
           </label><br>
-          <label>Email
-            <input type="checkbox" name="user_notifications" value="sub_email">
+          <label>Tel:<br>
+            <input class="tel_input" type="tel:" name="user_phone">
+          </label><br>
+          <label>Gender:<br>
+            <label>Boy
+              <input class="radio" type="radio" name="user_gender" value="male">
+            </label>
+            <label>Girl
+              <input class="radio" type="radio" name="user_gender" value="male">
+            </label>
+          </label><br>
+          <label>Occupation:<br>
+            <div class="select">
+              <select id="select" name="job" /><div>
+                <option>Front End Developer</option>
+                <option>Ruby Developer</option>
+                <option>Python Developer</option>
+                <option>Web Designer</option>
+              </select>
+            </div>
+          </label><br>
+          <label>Bio:<br>
+            <textarea placeholder="Your Lifestory" name="user_bio" rows="8" cols="40"></textarea>
           </label>
-        </label><br>
-        <label>
-          By signing up you are agreeing to our terms and conditions<br>
-          <input type="checkbox" name="terms" value="accepted">
-        </label>
-        <button type="submit">Submit</button>
+        </fieldset>
+        <fieldset><h3>Your Preferences</h3>
+          <label>Notifications:<br>
+            <label>SMS
+              <input class="checkbox" type="checkbox" name="user_notifications" value="sub_text" />
+              <div><div>
+              </div></div>
+            </label>
+            <label>Email
+              <input class="checkbox" type="checkbox" name="user_notifications" value="sub_email">
+              <div><div>
+              </div></div>
+            </label>
+          </label><br>
+          <label>
+            By signing up you are agreeing to our terms and conditions
+            <input class="checkbox" type="checkbox" name="terms" value="accepted">
+            <div><div>
+            </div></div>
+          </label>
+        </fieldset>
+        <button class="submit" type="submit">SUBMIT</button>
       </form>
     </div>
   </div>
